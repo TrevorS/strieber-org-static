@@ -1,15 +1,13 @@
-import Head from "next/head";
+import Meta from "../components/Meta";
+import Main from "../components/Main";
 
 const Home = () => (
-  <div className="container">
-    <Head>
-      <title>strieber.org</title>
-    </Head>
-
-    <main></main>
-
-    <footer></footer>
-  </div>
+  <>
+    <Meta />
+    <div className="container">
+      <Main />
+    </div>
+  </>
 );
 
 export default Home;

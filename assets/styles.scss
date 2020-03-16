@@ -1,0 +1,21 @@
+@import "../assets/_colors.scss";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+html {
+  background: $parent-bg;
+  color: $color;
+}
+
+a {
+  color: $links;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
