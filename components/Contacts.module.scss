@@ -1,3 +1,5 @@
+@import "../assets/_colors.scss";
+
 .contacts {
   text-align: center;
   font-size: 0.85rem;
@@ -5,4 +7,8 @@
 
 .email {
   padding-top: 1rem;
+}
+
+.emailAt {
+  color: $color;
 }

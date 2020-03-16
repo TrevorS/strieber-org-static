@@ -1,15 +1,31 @@
+import ExternalLink from "./ExternalLink";
+
 import styles from "./Contacts.module.scss";
 
 const Contacts = () => (
   <div className={styles.contacts}>
     <div>
-      You can find me at <a href="https://github.com/TrevorS">GitHub</a>,{" "}
-      <a href="https://twitter.com/TrevorStrieber">Twitter</a> or{" "}
-      <a href="https://www.linkedin.com/in/trev0r">LinkedIn</a>.
+      You can find me at&nbsp;
+      <ExternalLink href="https://github.com/TrevorS" newTab={true}>
+        GitHub
+      </ExternalLink>
+      ,&nbsp;
+      <ExternalLink href="https://twitter.com/TrevorStrieber" newTab={true}>
+        Twitter
+      </ExternalLink>
+      &nbsp;or&nbsp;
+      <ExternalLink href="https://www.linkedin.com/in/trev0r" newTab={true}>
+        LinkedIn
+      </ExternalLink>
+      .
     </div>
 
     <div className={styles.email}>
-      <a href="mailto:trevor@strieber.org">trevor@strieber.org</a>
+      <ExternalLink href="mailto:trevor@strieber.org">
+        trevor
+        <span className={styles.emailAt}>@</span>
+        strieber.org
+      </ExternalLink>
     </div>
   </div>
 );

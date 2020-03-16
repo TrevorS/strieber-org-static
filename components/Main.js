@@ -8,7 +8,7 @@ const Main = () => (
     <main>
       <h1 className={styles.title}>Trevor Strieber</h1>
 
-      <div className={styles.me_container}>
+      <div className={styles.meContainer}>
         <img
           className={styles.me}
           alt="Trevor"
